@@ -22,9 +22,12 @@ class TreeGenerator:
 
     def _generate_tree_body(self, directory, prefix, tree):
         entries = list(directory.iterdir())
-        # Filtragem corrigida para diretórios e extensões de arquivos
+        # Filtragem para remover diretórios e extensões ignorados
         entries = [entry for entry in entries if not any(entry.name.endswith(ext) for ext in self.config['ignore_exts']) and entry.name not in self.config['ignore_dirs']]
-        entries = sorted(entries, key=lambda entry: (entry.is_dir(), entry.name))
+
+        # Ordenação modificada para classificar primeiro por tipo de arquivo e depois por nome
+        entries.sort(key=lambda entry: (entry.is_dir(), os.path.splitext(entry.name)[1], entry.name))
+
         entries_count = len(entries)
 
         for index, entry in enumerate(entries):
@@ -36,7 +39,6 @@ class TreeGenerator:
                 new_prefix = f"{prefix}{PIPE_PREFIX if index != entries_count - 1 else SPACE_PREFIX}"
                 self._generate_tree_body(entry, new_prefix, tree)
             else:
-                # Corrigir para verificar a extensão do arquivo corretamente
                 file_ext = os.path.splitext(entry.name)[1]
                 icon = get_icon_for_extension(file_ext)
                 tree.append(f"{prefix}{connector} {icon} {entry.name}")

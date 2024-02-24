@@ -1,5 +1,6 @@
 <pre>
 🗃️ foxtree/
+├── 📝 README.md
 ├── 📝 showtree.md
 ├── 🐍 tree.py
 └── 🛠️ modules/
