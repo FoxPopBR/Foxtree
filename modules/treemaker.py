@@ -2,7 +2,7 @@
 
 import os
 import pathlib
-from modules.config import get_config, get_icon_for_extension, get_folder_icon
+from modules.config_treemaker import get_config, get_icon_for_extension, get_folder_icon
 
 PIPE = "│"
 ELBOW = "└──"

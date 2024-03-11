@@ -11,17 +11,17 @@ Funcionalidades Principais:
 - Saída formatada em Markdown para fácil integração com documentações.
 
 Como Usar:
-1. Configure as preferências no arquivo `config.py`.
+1. Configure as preferências no arquivo `config_treemaker.py`.
 2. Execute o script `tree.py` na raiz do seu projeto.
 3. Visualize o arquivo `showtree.md` gerado para ver a estrutura de diretórios.
 
 Personalização:
-- `config.py`: Define diretórios e extensões a serem ignorados, além de mapear ícones para tipos de arquivos e diretórios.
+- `config_treemaker.py`: Define diretórios e extensões a serem ignorados, além de mapear ícones para tipos de arquivos e diretórios.
 - Ícones e filtros podem ser ajustados para atender às necessidades específicas do seu projeto.
 
 Estrutura do Projeto:
 - `tree.py`: Script principal que inicia a geração da estrutura de diretórios.
-- `config.py`: Arquivo de configuração para personalização da ferramenta.
+- `config_treemaker.py`: Arquivo de configuração para personalização da ferramenta.
 - `treemaker.py`: Contém a lógica para construir a representação visual da estrutura do diretório.
 
 Desenvolvido por: [FoxpopBR]
