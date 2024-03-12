@@ -28,7 +28,7 @@ Desenvolvido por: [FoxpopBR]
 Licença: [Mit]
 """
 import pathlib
-from modules.treemaker import TreeGenerator
+from tools.treemaker import TreeGenerator
 
 def main():
     root_dir = pathlib.Path(__file__).resolve().parent

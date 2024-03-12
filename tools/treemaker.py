@@ -2,7 +2,7 @@
 
 import os
 import pathlib
-from modules.config_treemaker import get_config, get_icon_for_extension, get_folder_icon
+from tools.config_treemaker import get_config, get_icon_for_extension, get_folder_icon
 
 PIPE = "│"
 ELBOW = "└──"
@@ -22,12 +22,10 @@ class TreeGenerator:
 
     def _generate_tree_body(self, directory, prefix, tree):
         entries = list(directory.iterdir())
-        # Filtragem para remover diretórios e extensões ignorados
-        entries = [entry for entry in entries if not any(entry.name.endswith(ext) for ext in self.config['ignore_exts']) and entry.name not in self.config['ignore_dirs']]
+        # Filtragem para remover diretórios e extensões ignorados, além de arquivos especificados
+        entries = [entry for entry in entries if not any(entry.name.endswith(ext) for ext in self.config['ignore_exts']) and entry.name not in self.config['ignore_dirs'] and entry.name not in self.config.get('ignore_files', [])]
 
-        # Ordenação modificada para classificar primeiro por tipo de arquivo e depois por nome
         entries.sort(key=lambda entry: (entry.is_dir(), os.path.splitext(entry.name)[1], entry.name))
-
         entries_count = len(entries)
 
         for index, entry in enumerate(entries):
