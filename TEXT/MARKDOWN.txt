@@ -1,0 +1,138 @@
+MARKDOWN
+
+
+Exibir imagem
+![SomFox](https://raw.githubusercontent.com/FoxPopBR/SomFox/main/asset/SomFox.jpg)
+
+
+![Descrição da imagem](https://raw.githubusercontent.com/FoxPopBR/SomFox/main/asset/SomFox.jpg){width=500px height=500px style="display: block; margin: 0 auto;"}
+
+
+Exibir imagem usando html
+<img src="https://raw.githubusercontent.com/FoxPopBR/SomFox/main/asset/SomFox.jpg" width="500" height="500" style="display: block; margin-left: auto; margin-right: auto;">
+
+
+Markdown para formatar e personalizar o seu texto:
+
+&nbsp; adiciona espaço ou margem no inicio do texto
+
+Títulos:
+
+shell
+Copy code
+# Título 1
+## Título 2
+### Título 3
+Negrito:
+
+
+Copy code
+**Texto em negrito**
+Itálico:
+
+Copy code
+*Texto em itálico*
+Negrito e Itálico:
+
+markdown
+Copy code
+***Texto em negrito e itálico***
+Lista Não Ordenada:
+
+markdown
+Copy code
+- Item 1
+- Item 2
+  - Subitem 1
+  - Subitem 2
+Lista Ordenada:
+
+markdown
+Copy code
+1. Item 1
+2. Item 2
+   1. Subitem 1
+   2. Subitem 2
+Citação:
+
+markdown
+Copy code
+> Texto da citação
+Links:
+
+Copy code
+[Texto do Link](URL)
+Imagens:
+
+Copy code
+![Texto Alternativo](caminho/para/imagem)
+Código em Linha:
+
+go
+Copy code
+`código`
+Blocos de Código (para múltiplas linhas):
+
+<pre>
+<code>```python
+def hello_world():
+    print("Hello, world!")
+```
+</code>
+</pre>
+
+
+Tabelas:
+
+Copy code
+| Cabeçalho 1 | Cabeçalho 2 |
+| ------------| ------------|
+| Dado 1      | Dado 2      |
+Linhas Horizontais:
+
+yaml
+Copy code
+---
+Comentários HTML (para adicionar personalizações adicionais):
+
+php
+Copy code
+<!-- Comentário -->
+
+
+
+📁 Pasta Pai
+│
+├── 📁 Pasta Filha 1
+│   ├── 📄 Arquivo 1.txt
+│   └── 📄 Arquivo 2.txt
+│
+└── 📁 Pasta Filha 2
+    ├── 📁 Subpasta 1
+    │   ├── 📄 Arquivo 3.txt
+    │   └── 📄 Arquivo 4.txt
+    │
+    └── 📁 Subpasta 2
+        └── 📄 Arquivo 5.txt
+
+
+**********
+Código do projeto exibido no markdown
+
+<pre>: Este é um elemento HTML que define o conteúdo como texto pré-formatado. Ele preserva tanto espaços em branco quanto quebras de linha no texto.
+
+<code>: Este é um elemento HTML usado para marcar partes de um texto que devem ser interpretadas como código. Ele é usado dentro do elemento <pre> para marcar o bloco de código.
+
+```python: Este é o início do bloco de código Markdown. Ele indica que o bloco de código a seguir deve ser interpretado como código Python. O "python" após os três crases é uma indicação do idioma do código (neste caso, Python), e você pode substituí-lo por outros idiomas, como "java", "javascript", "html", etc., dependendo do tipo de código que está escrevendo.
+
+def hello_world():: Este é um exemplo de código Python dentro do bloco de código. É uma simples função Python que imprime "Hello, world!" quando chamada.
+
+```: Este é o final do bloco de código Markdown. Ele indica que o bloco de código termina aqui.
+
+
+O renderizador de Markdown geralmente não possui a capacidade de identificar automaticamente a origem específica de um trecho de código em termos de nome do arquivo e número da linha. A informação {data-source-line="9"} é uma convenção adotada por alguns renderizadores para indicar a linha dentro do próprio arquivo Markdown.
+
+No entanto, se você estiver utilizando um sistema de controle de versão como Git e estiver visualizando o Markdown em uma plataforma como o GitHub, você pode clicar no link fornecido pelo {data-source-line="9"} para ser direcionado diretamente para a linha correspondente no GitHub, onde você poderá ver o arquivo original e sua localização dentro do repositório.
+***********
+
+

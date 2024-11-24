@@ -1,8 +1,8 @@
 def get_config():
     return {
-        'ignore_dirs': ['tools', 'node_modules', 'venv', '.git', '.vscode', '__pycache__'],
+        'ignore_dirs': ['node_modules','tools', 'venv', '.git', '.vscode', '__pycache__'],
         'ignore_exts': ['.log', '.tmp', '.gitignore'],
-         'ignore_files': ['tree.py'],  # Adicionado nova chave para ignorar nomes de arquivos específicos
+         'ignore_files': ['tree.py','showtree.md', 'teste.py', 'treemaker.py', 'config_treemaker.py', '.gitignore'],  # Adicionado nova chave para ignorar nomes de arquivos específicos
         'icons': {
             '📟': ['Programming', ['.c', '.cpp', '.cs', '.ts', '.go', '.rb', '.php']],
             '🐍': ['Python', ['.py']],
