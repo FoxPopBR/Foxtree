@@ -5,10 +5,7 @@
 
 Este projeto foi desenvolvido para fornecer uma visualização clara e intuitiva da estrutura de diretórios de um projeto de software, utilizando ícones personalizados para representar diferentes tipos de arquivos e diretórios. A ferramenta é extremamente útil para documentação e revisão rápida da organização do projeto.
 
-<details>
-<summary style="color:blue;">🗃️ Expandir a estrutura do projeto</summary>
-
-
+<pre>
 🗃️ Phantasy
   ├── 🐍 config.py   # 2 espaços do inicio
   ├── 🐍 datacollector.py
@@ -95,9 +92,7 @@ Este projeto foi desenvolvido para fornecer uma visualização clara e intuitiva
         ├── 📄 dados.json
         ├── 📝 project_structure.md
         └── 📝 project_structure.md.saved.bak.md
-
-
-</details>
+</pre>
 
 ## Componentes do Projeto
 
