@@ -7,7 +7,7 @@ Este projeto foi desenvolvido para fornecer uma visualização clara e intuitiva
 
 <pre>
 🗃️ Phantasy
-  ├── 🐍 config.py   # 2 espaços do inicio
+  ├── 🐍 config.py   
   ├── 🐍 datacollector.py
   ├── 📝 icones markdown.txt
   ├── 📝 Informações Projeto SomFox.txt
