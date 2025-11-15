@@ -11,7 +11,6 @@ Este projeto foi desenvolvido para fornecer uma visualização clara e intuitiva
   ├── 🐍 datacollector.py
   ├── 📝 icones markdown.txt
   ├── 📝 Informações Projeto SomFox.txt
-  ├── 📝 Instruções Personalizadas chat gpt.txt
   ├── 🐍 main.py
   ├── 📝 MARKDOWN.txt
   ├── 📝 project_structure.md
