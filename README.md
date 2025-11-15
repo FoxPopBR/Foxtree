@@ -8,7 +8,7 @@ Este projeto foi desenvolvido para fornecer uma visualização clara e intuitiva
 <details>
 <summary style="color:blue;">🗃️ Expandir a estrutura do projeto</summary>
 
-<pre>
+
 🗃️ Phantasy
   ├── 🐍 config.py   # 2 espaços do inicio
   ├── 🐍 datacollector.py
@@ -95,7 +95,7 @@ Este projeto foi desenvolvido para fornecer uma visualização clara e intuitiva
         ├── 📄 dados.json
         ├── 📝 project_structure.md
         └── 📝 project_structure.md.saved.bak.md
-</pre>
+
 
 </details>
 
